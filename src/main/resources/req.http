@@ -1,0 +1,31 @@
+GET http://localhost:8080/graphql?query=bookById
+Accept: application/json
+
+###
+POST http://localhost:8080/graphql
+Content-Type: application/graphql
+
+{
+  bookById(id: "book-1"){
+  id
+  name
+  pageCount
+  author {
+  firstName
+  lastName
+}
+}
+}
+
+###
+
+###
+
+POST http://localhost:8080/graphql
+Content-Type: application/graphql
+
+{
+  hello
+}
+
+###
